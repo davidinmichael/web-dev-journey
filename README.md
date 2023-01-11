@@ -1,0 +1,1 @@
+This repo contains files of my practice of web development. I aim to become a full stack software engineer, so I am starting out with front end development. Please drop any contributions and corrections.
