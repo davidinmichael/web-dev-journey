@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/qr-code-component-main/images/favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | QR code component</title>
 
@@ -12,10 +12,11 @@
   <style>
     body {
       background-color: hsl(219, 14%, 64%);
+      display: flex;
     }
     .container {
-      margin-left: auto; margin-right: auto;
-      width: 375px;
+      margin-left: 35%;
+      max-width: 375px;
       border-radius: 20px;
       padding: 10px 10px 30px 10px;
       background-color: hsl(0, 0%, 100%);
@@ -33,27 +34,33 @@
       color: hsl(213, 16%, 70%);
     }
     #image {
-      width: 70%;
+      max-width: 100%;
       border-radius: 20px;
       margin-left: auto; margin-right: auto;
-      display: flex;
+      display: block;
     }
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution {
+      font-size: 11px; text-align: center;
+      margin: 550px 0px 0px 600px;
+      display: inline;
+      position: absolute;
+      
+    }
     .attribution a { color: white }
   </style>
 </head>
 <body>
   <div class="container">
-    <img id="image" src="/qr-code-component-main/images/image-qr-code.png" alt="Frontend Mentor.io Barcode"/>
+    <img id="image" src="/qr-code-component-main/images/image-qr-code.png"/>
     <h1>Improve your front-end <br>skills by building projects</h1>
     <p>
       Scan the QR code to visit Frontend <br>Mentor and take your coding skills to <br>the next level
     </p>
   </div>
   
-  <div class="attribution"><br>
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a> 
-    Coded by <a href=" https://twitter.com/davidinmichael" target="_blank">David Michael</a>.
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a></p>
+    <p>Coded by <a href=" https://twitter.com/davidinmichael" target="_blank">David Michael</a>.</p>
   </div>
 </body>
 </html>
